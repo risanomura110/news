@@ -82,8 +82,8 @@ width:100%;
 }
 
 .item-lists>.list {
-  width: 37vh;
-  padding: 5vw;
+  width: 50vh;
+  padding: 2vw;
 	background-color: #FFF;
 }
 
@@ -101,7 +101,7 @@ width:100%;
 .item-info {
   background-color: #FFF;
   color: black;
-  padding: 1vw;
+  /* padding: 1vw; */
 }
 
 .item-name {
