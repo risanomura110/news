@@ -2,57 +2,38 @@
 <body>
 <div class='item-contents'>
  <ul class='item-lists'>
- <li class='list'>
-        <%= link_to "#" do %>
-        <div class='item-img-content'>
-          <%= image_tag "item-sample.png", class: "item-img" %>
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
-          </h3>
-          <h3 class='item-name'>
-            <%= "西村友作" %>
-          </h3>
-          <h3 class='item-name'>
-            <%= "日付け" %>
-          </h3>
-        </div>
-        <% end %>
- </li>
- <li class='list'>
-        <%= link_to "#" do %>
-        <div class='item-img-content'>
-          <%= image_tag "item-sample.png", class: "item-img" %>
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
-          </h3>
-          <h3 class='item-name'>
-            <%= "西村友作" %>
-          </h3>
-        </div>
-        <% end %>
- </li>
+  
+  <%= link_to '新規投稿', new_item_path, class: "subtitle" %>
 
-<li class='list'>
-        <%= link_to "#" do %>
+ <% @items.each do |item| %>
+ <li class='list'>
+<%= link_to items_path(item.id) do%>
         <div class='item-img-content'>
           <%= image_tag "item-sample.png", class: "item-img" %>
+                <%# <%= image_tag item.image, class: 'message-image' %> 
+
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
+            <%= item.title %>
           </h3>
           <h3 class='item-name'>
-            <%= "西村友作" %>
+            <%= item.name %>
+          </h3>
+          <h3 class='item-name'>
+            <%= item.updated_at.strftime("%Y-%m-%d") %>
+          </h3>
+            <h3 class='item-name'>
+            <%= item.genre.name %>
           </h3>
         </div>
         <% end %>
  </li>
-
+<% end %>
  </ul>
+
+
+
 </div>
 </body>
 <%= render "shared/footer" %>
