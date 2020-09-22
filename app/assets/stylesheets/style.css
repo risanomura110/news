@@ -39,12 +39,76 @@ margin:0 auto;
 padding:0 1%;
 width:98%;
 position:relative;
+
 }
 
 .inner{
 margin:0 auto;
 width:100%;
+
 }
+
+/* アイテム詳細 */
+/* 商品一覧 */
+
+
+.item-contents {
+  background-color: #FFF;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+	padding: 10vh 0;
+}
+
+.item-contents>.title {
+  font-size: 5vh;
+  line-height: 1.4;
+	font-weight: bold;
+}
+
+.item-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item-lists>.list {
+  width: 37vh;
+  padding: 5vw;
+	background-color: #FFF;
+}
+
+
+.item-img-content {
+	position: relative;
+
+}
+
+.item-img {
+  width: 50vh;
+  height: 30vh;
+}
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.item-name {
+  font-size: 2.5vh;
+}
+
+/* //商品一覧 */
 
 
 /*************
@@ -56,7 +120,7 @@ height:130px;
 
 #header h1{
 padding:5px 0 10px;
-font-size:12px;
+font-size:50px;
 font-weight:normal;
 }
 
@@ -93,132 +157,6 @@ font-weight:bold;
 font-size:.6em;
 font-weight:normal;
 }
-
-
-/**************************
-/* メイン画像（トップページ+サブページ）
-**************************/
-#mainBanner{
-clear:both;
-margin:25px auto 40px;
-padding:0;
-position:relative;
-text-align:center;
-}
-#mainBanner .inner{position:relative;}
-
-#mainBanner img{
-max-width:100%;
-height:auto;
-}
-
-.slogan{
-color:#fff;
-font-weight:bold;
-position:absolute;
-max-width:100%;
-height:auto;
-bottom:42%;
-left:40px;
-padding:5px 10px;
-line-height:1.4;
-text-align:left;
-}
-
-.slogan h2{
-padding-bottom:5px;
-font-size:22px;
-}
-
-
-/**************************
-/* グリッド
-**************************/
-.gridWrapper{
-clear:both;
-padding-bottom:20px;
-overflow:hidden;
-}
-
-* html .gridWrapper{height:1%;}
-	
-.grid{
-overflow:hidden;
-}
-
-.box{
-padding:10px;
-}
-
-.box img{
-max-width:100%;
-height:auto;
-}
-
-.box h3{
-font-size:16px;
-padding:10px 0 15px;
-}
-
-.box h3, .box p{text-align:left;}
-
-.box p.readmore{
-padding:10px 5px 5px;
-text-align:right;
-}
-
-.box p.readmore a{
-padding:3px 7px;
-border-radius:3px;
-}
-
-
-/*************
-メイン コンテンツ
-*************/
-section.content article{
-padding:30px 0 20px 0;
-margin-bottom:10px;
-overflow:hidden;
-}
-
-section.toppage article,section.content .archive{border:0;}
-
-
-/* アーカイブページ */
-section.content .archive{
-padding:0;
-border-bottom:1px dotted #ccc;
-}
-
-section.content p{margin-bottom:5px;}
-
-h3.heading{
-font-size:16px;
-font-weight:normal;
-padding:15px 0;
-margin-bottom:5px;
-border-top:2px solid #ebebeb;
-border-bottom:2px solid #ebebeb;
-}
-
-section.content img{
-max-width:90%;
-height:auto;
-}
-
-.alignleft{
-float:left;
-clear:left;
-margin:3px 10px 10px 0;
-}
-
-.alignright{
-float:right;
-clear:right;
-margin:3px 0 10px 10px;
-}
-
 
 
 /*************

@@ -1,15 +1,60 @@
 <%= render "shared/header" %>
-	<div id="wrapper">
-		<section id="main">
-			<%# <section id="post-250" class="content">
-				<h3 class="heading">新着記事</h3>
-	
-			</section>
-			<div class="pagenav"> %>
-	
-			</div>
-		</section>
-   </div>
+<body>
+<div class='item-contents'>
+ <ul class='item-lists'>
+ <li class='list'>
+        <%= link_to "#" do %>
+        <div class='item-img-content'>
+          <%= image_tag "item-sample.png", class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
+          </h3>
+          <h3 class='item-name'>
+            <%= "西村友作" %>
+          </h3>
+          <h3 class='item-name'>
+            <%= "日付け" %>
+          </h3>
+        </div>
+        <% end %>
+ </li>
+ <li class='list'>
+        <%= link_to "#" do %>
+        <div class='item-img-content'>
+          <%= image_tag "item-sample.png", class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
+          </h3>
+          <h3 class='item-name'>
+            <%= "西村友作" %>
+          </h3>
+        </div>
+        <% end %>
+ </li>
+
+<li class='list'>
+        <%= link_to "#" do %>
+        <div class='item-img-content'>
+          <%= image_tag "item-sample.png", class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= "スマホ1台ですべて決済低コスト化のメリット" %>
+          </h3>
+          <h3 class='item-name'>
+            <%= "西村友作" %>
+          </h3>
+        </div>
+        <% end %>
+ </li>
+
+ </ul>
+</div>
+</body>
 <%= render "shared/footer" %>
 
 	
