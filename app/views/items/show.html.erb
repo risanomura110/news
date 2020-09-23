@@ -1,0 +1,25 @@
+
+   <%# <%= image_tag @item.image, class: "article-img" if @item.image.attached? %>  
+  <div class="article">
+    <div class="article-date">
+      <%= @item.updated_at.strftime("%Y-%m-%d") %>
+    </div>
+    <div class="article-genre">
+      <%= @item.genre.name %>
+    </div>
+    <div class="article-title">
+      <%= @item.title %>
+    </div>
+     <div class="article-name">
+      <%= @item.name %>
+    </div>
+    <div class="article-text">
+      <%= @item.text %>
+    </div>
+    <div>
+    <%="戻る"%>
+    </div>
+  </div>
+
+
+<%= render "shared/footer" %>

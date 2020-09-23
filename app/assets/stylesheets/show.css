@@ -1,0 +1,36 @@
+
+.article{
+  height:200px;
+  background-color:lightgray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+/* 日付 */
+.article-date{
+  font-size: 16px;
+  padding: 5px;
+}
+/* ジャンル */
+.article-genre{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: white;
+}
+/* タイトル */
+.article-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 著者名 */
+.article-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 本文 */
+.article-text{
+  font-size: 15px;
+}
