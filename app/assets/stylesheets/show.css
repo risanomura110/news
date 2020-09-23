@@ -34,3 +34,10 @@
 .article-text{
   font-size: 15px;
 }
+/* 戻る */
+.return{
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  background-color: white;
+}
