@@ -10,13 +10,15 @@
 <%= link_to item_path(item.id) do%>
 <%# 詳細ページにいくitem_path(item.id) %>
         <div class='item-img-content'>
-          <%= image_tag "item-sample.png", class: "item-img" %>
-                <%# <%= image_tag item.image, class: 'message-image' %> 
+      <%= image_tag item.image, class: 'item-img' if item.image.attached?%>
 
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= item.title %> <%= item.genre.name %>
+            <%= item.title %> 
+          </h3>
+           <h3 class='item-name'>
+          <%= item.genre.name %>
           </h3>
           <h3 class='item-name'>
             <%= item.name %>

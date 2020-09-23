@@ -1,6 +1,8 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :genre
+  has_one_attached :image
+
    #空の投稿を保存できないようにする
   #  validates :image, :name, :title, :genre, :text, presence: true
 

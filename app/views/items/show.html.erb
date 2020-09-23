@@ -1,6 +1,7 @@
 
-   <%# <%= image_tag @item.image, class: "article-img" if @item.image.attached? %>  
   <div class="article">
+      <%= image_tag @item.image.variant(resize:'100x100'), class: 'article-image' if @item.image.attached?%>
+
     <div class="article-date">
       <%= @item.updated_at.strftime("%Y-%m-%d") %>
     </div>
