@@ -17,6 +17,8 @@ class ItemsController < ApplicationController
   end
   def show
     @item = Item.find(params[:id])
+    @comment = Comment.new
+    @comments = @item.comments
   end
   def search
     @items = Item.search(params[:keyword])

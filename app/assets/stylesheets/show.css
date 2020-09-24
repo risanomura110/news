@@ -41,3 +41,30 @@
   padding: 5px;
   background-color: white;
 }
+
+/* コメント記入欄 */
+.container {
+  margin: 20px 0;
+  padding: 30px;
+}
+
+.container h4 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+}
+/* コメント表示 */
+.comments {
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.comments a {
+  color: #57C3E9;
+}
+
+.comments a:hover {
+  text-decoration: underline;
+}

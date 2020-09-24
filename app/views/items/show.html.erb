@@ -20,6 +20,33 @@
     <div>
    <%= link_to '戻る', items_path, class: "return" %>
     </div>
+
+
+<div class="container">
+<%# コメント記入欄 %>
+      <%= form_with(model: [@item, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+<%# コメント記入欄 %>
+<%# コメント表示 %>
+   <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+<%# コメント表示 %>
+</div>
+
+
+
+
+
     <%= render "shared/footer" %>
   </div>
 
