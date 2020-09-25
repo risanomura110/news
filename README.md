@@ -7,9 +7,9 @@
 | text      | text      | null: false                    |
 
 ### Association
-  belongs_to_active_hash :genre
-  has_one_attached :image
-  has_many :comments
+- belongs_to_active_hash :genre
+- has_one_attached :image
+- has_many :comments
 
 
 ## commentsテーブル
