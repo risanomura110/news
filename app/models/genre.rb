@@ -8,4 +8,4 @@ class Genre < ActiveHash::Base
     { id: 6, name: '文化・メディア' },
     { id: 7, name: '生活・医療' }
   ]
-  end
+end
