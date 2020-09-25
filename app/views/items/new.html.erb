@@ -1,13 +1,29 @@
-
+ <div class="new">
     <%= form_with model: @item, url:items_path, local: true do |f| %>
+    <div>
     記事を投稿する
-    <%= f.file_field :image, id:"item-image" %>
-    <%= f.text_field :name, placeholder: "著者名" %>
-    <%= f.text_field :title, placeholder:"タイトル" %>
-    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+    </div>
+    <div>
+    写真:<%= f.file_field :image, id:"item-image" %>
+    </div>
+    <div>
+    著者名：<%= f.text_field :name, placeholder: "著者名" %>
+    </div>
+    <div>
+    タイトル:<%= f.text_field :title, placeholder:"タイトル" %>
+    </div>
+    <div>
+    ジャンル:<%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+    </div>
+    <div>
     <%= f.text_area :text, placeholder:"本文" %>
+    </div>
+    <div>
     <%= f.submit "投稿する" ,class:"btn" %>
+    </div>
+    <div>
+     <%= link_to '戻る', items_path%>
 
-
-
+    </div>
     <% end %>
+</div>

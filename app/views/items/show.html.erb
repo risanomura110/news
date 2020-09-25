@@ -1,6 +1,7 @@
 
-   <%# <%= image_tag @item.image, class: "article-img" if @item.image.attached? %>  
   <div class="article">
+      <%= image_tag @item.image.variant(resize:'100x100'), class: 'article-image' if @item.image.attached?%>
+
     <div class="article-date">
       <%= @item.updated_at.strftime("%Y-%m-%d") %>
     </div>
@@ -19,7 +20,31 @@
     <div>
    <%= link_to '戻る', items_path, class: "return" %>
     </div>
+
+
+<div class="container">
+<%# コメント記入欄 %>
+      <%= form_with(model: [@item, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+<%# コメント記入欄 %>
+<%# コメント表示 %>
+   <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+<%# コメント表示 %>
+</div>
+
+
+
+
+    <%= render "shared/footer" %>
   </div>
-
-
-<%= render "shared/footer" %>
