@@ -10,7 +10,7 @@
 <%= link_to item_path(item.id) do%>
 <%# 詳細ページにいくitem_path(item.id) %>
         <div class='item-img-content'>
-      <%= image_tag item.image, class: 'item-img' if item.image.attached?%>
+      <%= image_tag item.image.variant(resize:'300x200'), class: 'item-img' if item.image.attached?%>
 
         </div>
         <div class='item-info'>
