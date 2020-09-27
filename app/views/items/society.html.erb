@@ -2,7 +2,8 @@
 <body>
 <div class='item-contents'>
  <ul class='item-lists'>
- <% @items.each do |item| %>
+
+ <% @societys.each do |item| %>
  <li class='list'>
 <%= link_to item_path(item.id) do%>
 <%# 詳細ページにいくitem_path(item.id) %>

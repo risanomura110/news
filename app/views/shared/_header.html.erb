@@ -2,6 +2,7 @@
 		<header id="header" role="banner">
 		<div class="logo">
       <%= link_to '日本の論点',  items_path %>
+				<%= link_to '新規投稿', new_item_path, class: "subtitle" %>
 		</div>
 		<%# 検索フォーム %>
 	<div class="search">
@@ -18,18 +19,12 @@
 			<a class="menu" id="menu"><span>MENU</span></a>
 			<div class="panel">
 				<ul>
-					<li><a href="index.html"><strong>政治</strong><span>Politics</span></a></li>
-					<li >
-						<a href="sample.html"><strong>国際</strong><span>International</span></a>
-						<%# <ul class="sub-menu">
-							<li><a href="sample.html">サブメニュー</a></li>
-							<li><a href="sample.html">サブメニュー</a></li>
-						</ul> %>
-					</li>
-					<li><a href="sample.html"><strong>経済</strong><span>Economy</span></a></li>
-					<li><a href="sample.html"><strong>社会</strong><span>Society</span></a></li>
-					<li><a href="sample.html"><strong>文化・メディア</strong><span>Media&Culture</span></a></li>
-					<li><a href="sample.html"><strong>生活・医療</strong><span>Life&Medical</span></a></li>
+				<li><%= link_to '政治',  political_items_path %></li>
+	      <li><%= link_to '国際',  inter_items_path %></li>
+				<li><%= link_to '経済',  economy_items_path %></li>
+				<li><%= link_to '社会',  society_items_path %></li>
+				<li><%= link_to '文化・メディア',  media_items_path %></li>
+				<li><%= link_to '生活・医療',  life_items_path %></li>
 				</ul>
 			</div>
 		</div>
@@ -38,3 +33,5 @@
 
 
 </head>
+
+					<%# <li><a href="sample.html"><strong>生活・医療</strong><span>Life&Medical</span></a></li> %>
