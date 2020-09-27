@@ -18,6 +18,11 @@
     <div class="article-text">
       <%= @item.text %>
     </div>
+    <div class="twitter">
+       <%= link_to image_tag("twitter.png"), "https://twitter.com/share?url=#{request.url}&text=#{@item.title}&hashtags=日本の論点", title: 'Twitter', target: '_blank' %>
+    </div>
+
+
 <div class="container">
 <%# コメント記入欄 %>
   <div class="comment-form">

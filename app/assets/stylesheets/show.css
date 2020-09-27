@@ -21,7 +21,7 @@
 /* 日付 */
 .article-date{
   font-size: 16px;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 /* ジャンル */
 .article-genre{
@@ -33,18 +33,28 @@
 }
 /* タイトル */
 .article-title{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  padding-top:10px;
 }
 /* 著者名 */
 .article-name{
   font-size: 20px;
   font-weight: bold;
+  padding-top:10px;
+
 }
 /* 本文 */
 .article-text{
   font-size: 15px;
+  padding-top:10px;
 }
+
+/* ツイッターアイコン */
+.twitter{
+  padding-top: 10px;
+}
+
 /* 戻る */
 .return{
   /* color: black;
@@ -108,4 +118,3 @@
   margin-top: 15px;
   text-align: center;
 }
-
