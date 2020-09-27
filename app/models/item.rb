@@ -11,7 +11,7 @@ class Item < ApplicationRecord
       Item.all
     end
   end
-  
+
   # 空の投稿を保存できないようにする
   validates :image, :name, :title, :genre, :text, presence: true
   # ジャンルの選択が「--」の時は保存できないようにする
