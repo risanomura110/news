@@ -27,20 +27,21 @@ line-height:1.5;
 
 /* リンク設定
 ------------------------------------------------------------*/
-a{color:#6caefe;text-decoration:none;}
-a:hover{color:#488fdd;}
+a{text-decoration:none;}
+
+a:hover{text-decoration:underline;
+	color:black;}
 a:active, a:focus {outline:0;}
 
 
 /* 全体
 ------------------------------------------------------------*/
-#wrapper{
-margin:0 auto;
+/* #wrapper{
+/* margin:0 auto;
 padding:0 1%;
 width:98%;
-position:relative;
+position:relative; */
 
-}
 
 .inner{
 margin:0 auto;
@@ -115,7 +116,7 @@ width:100%;
 /* ヘッダー
 *************/
 #header{
-height:130px;
+height:40px;
 }
 
 #header h1{

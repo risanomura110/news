@@ -1,7 +1,8 @@
-
-  <div class="article">
-      <%= image_tag @item.image.variant(resize:'100x100'), class: 'article-image' if @item.image.attached?%>
-
+<%= render "shared/header" %>
+  <div class="wrapper">
+  <div class="article-img">
+      <%= image_tag @item.image.variant(resize:'350x250'), class: 'article-image' if @item.image.attached?%>
+  </div>
     <div class="article-date">
       <%= @item.updated_at.strftime("%Y-%m-%d") %>
     </div>
@@ -17,17 +18,19 @@
     <div class="article-text">
       <%= @item.text %>
     </div>
-    <div>
-   <%= link_to '戻る', items_path, class: "return" %>
+    <div class="twitter">
+       <%= link_to image_tag("twitter.png"), "https://twitter.com/share?url=#{request.url}&text=#{@item.title}&hashtags=日本の論点", title: 'Twitter', target: '_blank' %>
     </div>
 
 
 <div class="container">
 <%# コメント記入欄 %>
+  <div class="comment-form">
       <%= form_with(model: [@item, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.text_area :text, placeholder: "コメントする", class:"text-form" %>
+        <%= form.submit "SEND",class:"send"%>
       <% end %>
+  </div>
 <%# コメント記入欄 %>
 <%# コメント表示 %>
    <div class="comments">
@@ -39,12 +42,7 @@
           </p>
         <% end %>
       <% end %>
-    </div>
 <%# コメント表示 %>
 </div>
-
-
-
-
     <%= render "shared/footer" %>
-  </div>
+</div>

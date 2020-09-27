@@ -5,6 +5,12 @@ Rails.application.routes.draw do
     resources :comments, only: :create
     collection do
       get 'search'
+      get 'political'
+      get 'inter'
+      get 'economy'
+      get 'society'
+      get 'media'
+      get 'life'
     end
   end
 end

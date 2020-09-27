@@ -8,63 +8,113 @@
   padding: 20px;
 }
 
+.wrapper {
+  text-align: left;
+  margin: 0 auto;
+  width: 800px;
+  position: relative;
+}
+.article-img{
+  text-align: center;
+}
+
 /* 日付 */
 .article-date{
   font-size: 16px;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 /* ジャンル */
 .article-genre{
   font-size: 16px;
+  width: max-content;
   border: 1px solid;
   padding: 5px;
   background-color: white;
 }
 /* タイトル */
 .article-title{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  padding-top:10px;
 }
 /* 著者名 */
 .article-name{
   font-size: 20px;
   font-weight: bold;
+  padding-top:10px;
+
 }
 /* 本文 */
 .article-text{
   font-size: 15px;
+  padding-top:10px;
 }
+
+/* ツイッターアイコン */
+.twitter{
+  padding-top: 10px;
+}
+
 /* 戻る */
 .return{
-  color: black;
+  /* color: black;
   font-size: 16px;
-  padding: 5px;
-  background-color: white;
+  padding: 5px; */
+  display: block;
+  width: max-content;
+  margin-top: 30px;
+  padding: 15px;
+  color:black;
 }
 
 /* コメント記入欄 */
 .container {
   margin: 20px 0;
   padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+.comment-form{
+}
+.text-form{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  display: block;
+
+}
+
+
+.send{
+  display: block;
+  width: 200px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid white;
+  background:#7fbfff;
+  font-size:16px;
+  font-weight:bold;
+  color: white;
+}
+/* マウスオーバー時の背景色 */
+.send:hover {
+  /* background-color: deepskyblue; */
+  color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
+  }
+
 
 .container h4 {
   margin: 0 0 20px;
   text-align: center;
   font-weight: normal;
-  font-size: 20px;
-  color: #666;
+  font-size: 15px;
 }
 /* コメント表示 */
 .comments {
   padding: 5px;
   margin-top: 15px;
-}
-
-.comments a {
-  color: #57C3E9;
-}
-
-.comments a:hover {
-  text-decoration: underline;
+  text-align: center;
 }
