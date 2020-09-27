@@ -13,5 +13,4 @@ Rails.application.routes.draw do
       get 'life'
     end
   end
-  devise_for :users
 end
