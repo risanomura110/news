@@ -1,6 +1,5 @@
 class ItemsController < ApplicationController
   def index
-    # @items = Item.all
     @items = Item.order('created_at DESC')
   end
 
@@ -46,10 +45,32 @@ class ItemsController < ApplicationController
     @comment = Comment.new
     @comments = @item.comments
   end
-
   def search
     @items = Item.search(params[:keyword])
   end
+
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+    redirect_to action: 'index'
+  end
+
+
+
+
+  def edit
+    @item = Item.find(params[:id])
+  end
+
+  def update
+  @item = Item.find(params[:id])
+  if @item.update(item_params)
+  redirect_to action: 'index'
+  else
+    render :edit
+  end
+end
+
 
   private
 

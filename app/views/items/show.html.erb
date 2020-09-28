@@ -21,6 +21,11 @@
     <div class="twitter">
        <%= link_to image_tag("twitter.png"), "https://twitter.com/share?url=#{request.url}&text=#{@item.title}&hashtags=日本の論点", title: 'Twitter', target: '_blank' %>
     </div>
+		<% if user_signed_in? && current_user.admin? %>
+     			<%= link_to '削除', item_path(@item.id), method: :delete %>
+          <%= link_to '編集', edit_item_path(@item.id), method: :get %>
+    <% end %>
+
 
 
 <div class="container">
