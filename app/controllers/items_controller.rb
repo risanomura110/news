@@ -46,11 +46,15 @@ class ItemsController < ApplicationController
     @comment = Comment.new
     @comments = @item.comments
   end
-
   def search
     @items = Item.search(params[:keyword])
   end
 
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+    redirect_to action: 'index'
+  end
   private
 
   def item_params
