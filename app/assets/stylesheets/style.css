@@ -127,22 +127,6 @@ font-weight:normal;
 
 
 
-/*************
-/* ロゴ
-*************/
-.logo{
-float:left;
-}
-
-.logo a{
-color:#555;
-}
-
-.logo p{float:left;}
-
-.logo span{display:block;}
-
-
 
 
 /*************
@@ -457,7 +441,7 @@ img.alignleft{margin:0 7px 2px 0;}
 	overflow:hidden;
 	}
 	
-	.logo{width:500px;}
+	/* .logo{width:500px;} */
 	
 	/* グリッド全体 */
 	.gridWrapper{

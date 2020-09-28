@@ -1,3 +1,25 @@
+/*************
+/* ロゴ
+*************/
+.logo{
+  float:left;
+  }
+  
+  .logo a{
+  color:#555;
+  }
+  
+  .logo p{float:left;}
+  
+  .logo span{display:block;}
+
+/* ログインボタン */
+.devise{
+  float:left;
+  margin-top:6px;
+  margin-left: 10px;
+  font-size: 20px;
+}
 /* 1.検索フォーム全体 */
 .search{
   /* text-align: right; */
@@ -6,7 +28,6 @@
 }
 /* 2.検索フォーム */
 .search-form{
-  
 }
 /* 2.検索ボックス */
 .search-input{
