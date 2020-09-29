@@ -22,3 +22,10 @@
 ### Association
 
 - belongs_to :item
+
+## users テーブル
+
+| Column      | Type    | Options     |
+| ------------| ------  | ----------- |
+| email       | string  | null: false |
+| password    | string  | null: false |
