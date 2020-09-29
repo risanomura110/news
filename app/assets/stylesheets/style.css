@@ -185,9 +185,8 @@ font-size:12px;
 }
 
 ul.footnav{
-float:right;
-width:620px;
-padding:10px 0;
+margin: 10px auto;
+width:400px;
 }
 ul.footnav ul{display:none;}
 
