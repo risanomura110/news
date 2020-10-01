@@ -11,8 +11,8 @@
 .wrapper {
   text-align: left;
   margin: 0 auto;
-  width: 800px;
   position: relative;
+  width: 80%;
 }
 .article-img{
   text-align: center;
