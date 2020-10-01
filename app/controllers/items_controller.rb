@@ -45,6 +45,7 @@ class ItemsController < ApplicationController
     @comment = Comment.new
     @comments = @item.comments
   end
+
   def search
     @items = Item.search(params[:keyword])
   end
@@ -55,22 +56,18 @@ class ItemsController < ApplicationController
     redirect_to action: 'index'
   end
 
-
-
-
   def edit
     @item = Item.find(params[:id])
   end
 
   def update
-  @item = Item.find(params[:id])
-  if @item.update(item_params)
-  redirect_to action: 'index'
-  else
-    render :edit
+    @item = Item.find(params[:id])
+    if @item.update(item_params)
+      redirect_to action: 'index'
+    else
+      render :edit
+    end
   end
-end
-
 
   private
 
