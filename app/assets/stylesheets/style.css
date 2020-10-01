@@ -46,7 +46,6 @@ position:relative; */
 .inner{
 margin:0 auto;
 width:100%;
-
 }
 
 /* アイテム詳細 */
@@ -600,4 +599,5 @@ img.alignleft{margin:0 7px 2px 0;}
 	.grid{width:100%;margin:10px 0;}
 	.box img{max-width:100px;}
 	#mainBanner h2,#mainBanner p{font-size:80%;}
+	.post{font-size:80%;}
 }
