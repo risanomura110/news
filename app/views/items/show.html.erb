@@ -13,7 +13,7 @@
       <%= @item.title %>
     </div>
      <div class="article-name">
-      <%= @item.name %>
+     <%= link_to "#{@item.name}", "#{@item.url}" %>
     </div>
     <div class="article-text">
       <%= @item.text %>
