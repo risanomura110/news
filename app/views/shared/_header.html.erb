@@ -23,6 +23,7 @@
 						<%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
 		 		<% if current_user.admin? %> 
      					<%= link_to "投稿する",  new_item_path, class: "post"%>
+							<%= link_to "著者情報",  new_write_path, class: "post"%>
      		<% end %>
     <% else %>
             <%= link_to "ログイン", new_user_session_path, class: "post" %>

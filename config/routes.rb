@@ -14,4 +14,5 @@ Rails.application.routes.draw do
       get 'life'
     end
   end
+  resources :writes
 end
