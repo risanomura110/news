@@ -16,8 +16,13 @@
 }
 .article-img{
   text-align: center;
-  
 }
+
+.writer-img{
+  text-align: center;
+  padding-top: 20px;
+}
+
 
 /* 日付 */
 .article-date{

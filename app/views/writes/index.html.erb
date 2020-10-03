@@ -1,0 +1,23 @@
+<%= render "shared/header" %>
+<body>
+<div class='write-contents'>
+ <ul class='write-lists'>
+ <% @writes.each do |write| %>
+ <li class='list'>
+ <%= link_to write_path(write.id) do%> 
+<%# 詳細ページにいくitem_path(item.id) %>
+        <%# <div class='item-img-content'>
+      <%= image_tag item.image.variant(resize:'300x200'), class: 'item-img' if item.image.attached?%>
+        <%# </div>  %>
+        <div class='write-info'>
+          <h3 class='write-name'>
+            <%= write.name %> 
+          </h3>
+        </div>
+        <%end%>
+ </li>
+<% end %>
+ </ul>
+</div>
+</body>
+<%= render "shared/footer" %>
