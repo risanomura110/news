@@ -1,7 +1,7 @@
  <div class="new">
-    <%= form_with model: @write , url:writes_path, local: true do |f| %>
+    <%= form_with model: @write , local: true do |f| %>
     <div>
-    記事を投稿する
+    著者情報を変更する
     </div>
     <div>
     写真:<%= f.file_field :image, id:"item-image" %>
@@ -22,7 +22,7 @@
     経歴:<%= f.text_area :text, placeholder:"経歴" %>
     </div>
     <div>
-    <%= f.submit "投稿する" ,class:"btn" %>
+    <%= f.submit "変更する" ,class:"btn" %>
     </div>
     <div>
      <%= link_to '戻る', items_path%>

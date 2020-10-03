@@ -1,19 +1,19 @@
 <%= render "shared/header" %>
   <div class="wrapper">
    <div class="article-img">
-      <%# <%= image_tag @write.image.variant(resize:'350x250'), class: 'article-image' if @write.image.attached?%> %>
+      <%= image_tag @write.image.variant(resize:'350x250'), class: 'article-image' if @write.image.attached? %>
    </div> 
     <div class="article-genre">
       <%= @write.name %>
     </div>
-    <div class="article-title">
-      <%= @write.text %>
-    </div>
      <div class="article-name">
-     <%= @write.twitter %>
+       <%= link_to "ツイッター", "#{@write.twitter}",target: :_blank %>
     </div>
     <div class="article-text">
-      <%= @write.blog %>
+    <%= link_to "ブログ", "#{@write.blog}" ,target: :_blank%>
+    </div>
+        <div class="article-title">
+      <%= @write.text %>
     </div>
 		<% if user_signed_in? && current_user.admin? %>
      			 <%= link_to '削除', write_path(@write.id), method: :delete %> 

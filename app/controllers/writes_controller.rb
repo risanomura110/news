@@ -2,6 +2,7 @@ class WritesController < ApplicationController
   def index
     @writes = Write.order('created_at DESC')
   end
+
   def new
     @write = Write.new
   end
@@ -18,20 +19,21 @@ class WritesController < ApplicationController
   def show
     @write = Write.find(params[:id])
   end
+
   def destroy
-    @write =  Write.find(params[:id])
+    @write = Write.find(params[:id])
     @write.destroy
     redirect_to action: 'index'
   end
 
   def edit
-    @write =  Write.find(params[:id])
+    @write = Write.find(params[:id])
   end
 
   def update
     @write = Write.find(params[:id])
     if @write.update(write_params)
-      redirect_to action: 'index'
+      redirect_to action: 'show'
     else
       render :edit
     end
@@ -43,4 +45,3 @@ class WritesController < ApplicationController
     params.require(:write).permit(:image, :name, :text, :twitter, :blog)
   end
 end
-
