@@ -1,18 +1,17 @@
 <%= render "shared/header" %>
   <div class="wrapper">
-   <div class="article-img">
-      <%= image_tag @write.image.variant(resize:'350x250'), class: 'article-image' if @write.image.attached? %>
+   <div class="writer-img">
+      <%= image_tag @write.image.variant(gravity: :center, resize:"150x150^", crop:"150x150+0+0").processed,
+       class: 'writer-image' if @write.image.attached? %>
    </div> 
-    <div class="article-genre">
+    <div class="article-name">
       <%= @write.name %>
     </div>
-     <div class="article-name">
-       <%= link_to "ツイッター", "#{@write.twitter}",target: :_blank %>
+     <div class="article-text">
+       <%= link_to image_tag("twitter.png"), "#{@write.twitter}",target: :_blank %>
+    <%= link_to image_tag("blog.png"), "#{@write.blog}" ,target: :_blank%>
     </div>
-    <div class="article-text">
-    <%= link_to "ブログ", "#{@write.blog}" ,target: :_blank%>
-    </div>
-        <div class="article-title">
+        <div class="article-text">
       <%= @write.text %>
     </div>
 		<% if user_signed_in? && current_user.admin? %>
