@@ -1,0 +1,24 @@
+<%= render "shared/header" %>
+  <div class="wrapper">
+  <%# <div class="article-img">
+      <%= image_tag @item.image.variant(resize:'350x250'), class: 'article-image' if @item.image.attached?%>
+  <%# </div> %>
+    <div class="article-genre">
+      <%= @write.name %>
+    </div>
+    <div class="article-title">
+      <%= @write.text %>
+    </div>
+     <div class="article-name">
+     <%= @write.twitter %>
+    </div>
+    <div class="article-text">
+      <%= @write.blog %>
+    </div>
+		<% if user_signed_in? && current_user.admin? %>
+     			 <%= link_to '削除', write_path(@write.id), method: :delete %> 
+           <%= link_to '編集', edit_write_path(@write.id), method: :get %> 
+    <% end %>
+
+    </div>
+    <%= render "shared/footer" %>
