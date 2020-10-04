@@ -1,37 +1,8 @@
-<%= render "shared/header" %>
-<body>
-<div class='item-contents'>
- <ul class='item-lists'>
-
- <% @societys.each do |item| %>
- <li class='list'>
-<%= link_to item_path(item.id) do%>
-<%# 詳細ページにいくitem_path(item.id) %>
-        <div class='item-img-content'>
-      <%= image_tag item.image.variant(resize:'300x200'), class: 'item-img' if item.image.attached?%>
-
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= item.title %> 
-          </h3>
-           <h3 class='item-name'>
-          <%= item.genre.name %>
-          </h3>
-          <h3 class='item-name'>
-            <%= item.name %>
-          </h3>
-          <h3 class='item-name'>
-            <%= item.updated_at.strftime("%Y-%m-%d") %>
-          </h3>
-        </div>
-        <% end %>
- </li>
-<% end %>
- </ul>
-
-
-
-</div>
-</body>
-<%= render "shared/footer" %>
+  <%= render "shared/header" %>
+  <div class="wrapper">
+  <div class="item-info">
+  記事
+  </div>
+  <%= render "shared/itemlists" %>
+  </div>
+  <%= render "shared/footer" %>

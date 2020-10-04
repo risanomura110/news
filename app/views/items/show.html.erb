@@ -25,9 +25,6 @@
      			<%= link_to '削除', item_path(@item.id), method: :delete %>
           <%= link_to '編集', edit_item_path(@item.id), method: :get %>
     <% end %>
-
-
-
 <div class="container">
 <%# コメント記入欄 %>
   <div class="comment-form">
@@ -47,25 +44,13 @@
           </p>
         <% end %>
       <% end %>
+      </div>
 <%# コメント表示 %>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-    <%= render "shared/footer" %>
+<div class="article-genre">
+関連記事
 </div>
+<%= render "shared/itemlists" %>
+</div>
+<%= render "shared/footer" %>
+
