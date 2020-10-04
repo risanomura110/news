@@ -41,6 +41,8 @@ class ItemsController < ApplicationController
   end
 
   def show
+    # @items = Item.where(genre_id:3 ).order('created_at DESC')
+
     @item = Item.find(params[:id])
     @comment = Comment.new
     @comments = @item.comments
