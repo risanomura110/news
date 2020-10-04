@@ -14,6 +14,14 @@
   position: relative;
   width: 80%;
 }
+/* 下関連記事の位置 */
+.genre-lists {
+  /* width: 100vw; */
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .article-img{
   text-align: center;
 }
