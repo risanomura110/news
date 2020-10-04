@@ -99,7 +99,8 @@ width:100%;
 }
 
 .item-info {
-  background-color: #FFF;
+	background-color: #FFF;
+	padding-top:10px;
   /* color: black; */
   /* padding: 1vw; */
 }
