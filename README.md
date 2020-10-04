@@ -85,6 +85,7 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript
 | Column    | Type      | Options                        |
 | ------    | ------    | ------------------------------ |
 | name      | string    | null: false                    |
+| url       | string    | null: false                    |
 | title     | string    | null: false                    |
 | gere_id   | integer   | null: false                    |
 | text      | text      | null: false                    |
@@ -112,3 +113,12 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript
 | ------------| ------  | ----------- |
 | email       | string  | null: false |
 | password    | string  | null: false |
+
+## writes テーブル
+
+| Column      | Type    | Options     |
+| ------------| ------  | ----------- |
+| name        | string  | null: false |
+| text        | text    | null: false |
+| twitter     | string  | null: false |
+| blog        | string  | null: false |
