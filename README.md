@@ -12,8 +12,8 @@ https://news29178.herokuapp.com/
 ID/Pass
 テスト用アカウント
 管理者用
-メールアドレス: risa1234@gmail.com
-パスワード: risa1234
+メールアドレス: risa123@gmail.com
+パスワード: risa123
 Githubリポジトリ
 https://github.com/risanomura110/news
 動作確認方法
