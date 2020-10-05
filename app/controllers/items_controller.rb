@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   def index
     @items = Item.order('created_at DESC')
   end
-
+#ジャンル政治
   def political
     @items = Item.where(genre_id: 2).order('created_at DESC')
   end
