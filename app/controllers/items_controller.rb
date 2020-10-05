@@ -42,7 +42,7 @@ class ItemsController < ApplicationController
 
   def show
     @items = Item.find(params[:id])
-    a= @items.genre_id
+    a= @items.genre_id#ユーザーが選択した記事のジャンル数字
     @items = Item.where(genre_id:a).order('created_at DESC')
 
     @item = Item.find(params[:id])
