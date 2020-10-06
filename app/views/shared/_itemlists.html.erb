@@ -1,29 +1,31 @@
+   <main class="main">
+     <div class="inner">
+       <%# <h1 class="page-heading">記事一覧</h1> %>
+       <div class="card__wrapper">
+       <%# カード %>
+        <% @items.each do |item| %>
+         <div class="card">
 
-<div class='item-contents'>
- <ul class='item-lists'>
- <% @items.each do |item| %>
- <li class='list'>
-<%= link_to item_path(item.id) do%>
-<%# 詳細ページにいくitem_path(item.id) %>
-        <div class='item-img-content'>
-      <%= image_tag item.image.variant(resize:'300x200'), class: 'item-img' if item.image.attached?%>
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= item.title %> 
-          </h3>
-           <h3 class='item-name'>
-          <%= item.genre.name %>
-          </h3>
-          <h3 class='item-name'>
+         <%= link_to item_path(item.id) do%>
+          <%= image_tag item.image.variant(resize:'260x200'), class: 'card__img' if item.image.attached?%>
+           <div class="card__body">
+             <h2 class="card__title"> <%= item.title %> </h2>
+             <p class="card__summary">
+             <%= item.genre.name %>
+             </p>
+            <p class="card__summary">
             <%= item.name %>
-          </h3>
-          <h3 class='item-name'>
-            <%= item.updated_at.strftime("%Y-%m-%d") %>
-          </h3>
-        </div>
-        <% end %>
- </li>
-<% end %>
- </ul>
-</div>
+             </p>
+            <p class="card__summary">
+              <%= item.updated_at.strftime("%Y-%m-%d") %>
+             </p> 
+           </div>
+           <%end%>
+           
+         </div>
+         <%end%>
+       <%# カード？ %>
+       </div>       
+     </div>
+   </main>
+   <!-- /.main -->
