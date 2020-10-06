@@ -7,7 +7,7 @@
          <div class="card">
 
          <%= link_to item_path(item.id) do%>
-          <%= image_tag item.image.variant(resize:'260x200'), class: 'card__img' if item.image.attached?%>
+          <%= image_tag item.image.variant(resize:'290x200'), class: 'card__img' if item.image.attached?%>
            <div class="card__body">
              <h2 class="card__title"> <%= item.title %> </h2>
              <p class="card__summary">
