@@ -1,28 +1,47 @@
-<header id="header" role="banner">
-<div class="logo">
-<%= link_to "日本の論点",  items_path, method: :get %>
-</div>
-<div class="devise">
-<% if user_signed_in?  %>
-<%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
-<% if current_user.admin? %> 
-<%= link_to "投稿する",  new_item_path, class: "post"%>
-<%= link_to "著者情報",  new_write_path, class: "post"%>
-<% end %>
-<% else %>
-<%= link_to "ログイン", new_user_session_path, class: "post" %>
-<%= link_to "新規登録", new_user_registration_path, class: "post" %>
-<% end %>
-</div>
-<%# 検索フォーム %>
-<div class="search">
-<%= form_with(url: search_items_path, local: true, method: :get, class: "search-form") do |form| %>
-<%= form.text_field :keyword, placeholder: "キーワードで検索", class: "search-input" %>
-<%= form.submit "検索", class: "search-btn" %>
-<%end%>
-<div>
-<%# 検索フォーム %>
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="日本の論点">
+	<title>日本の論点</title>
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script src="jquery1.4.4.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<head>
+		<header id="header" role="banner">
+		<div class="logo">
+      <%= link_to '日本の論点',  items_path %>
+		</div>
+
+
+		<div class="devise">
+		<% if user_signed_in?  %>
+						<%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
+		 		<% if current_user.admin? %> 
+     					<%= link_to "投稿する",  new_item_path, class: "post"%>
+							<%= link_to "著者情報",  new_write_path, class: "post"%>
+     		<% end %>
+    <% else %>
+            <%= link_to "ログイン", new_user_session_path, class: "post" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+    <% end %>
+		</div>
+
+
+		<%# 検索フォーム %>
+	<div class="search">
+	<%= form_with(url: search_items_path, local: true, method: :get, class: "search-form") do |form| %>
+  <%= form.text_field :keyword, placeholder: "キーワードで検索", class: "search-input" %>
+  <%= form.submit "検索", class: "search-btn" %>
+  <%end%>
+	<div>
+	<%# 検索フォーム %>
+	</header>
 
   <nav id="mainNav">
 		<div class="inner">
@@ -39,4 +58,7 @@
 			</div>
 		</div>
 	</nav>
-	</header>
+
+
+
+</head>
