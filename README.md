@@ -70,18 +70,15 @@ DEMO　読者・アプリケーション利用までの流れ<br>
 
 ![画像名](https://github.com/risanomura110/news/app/assets/images/2.png)
 
-
-
-
 ③気になる記事ページサイトを見る<br>
 ※スマートフォン表示<br>
-
-
+![画像名](news/3.PNG)
 
 ※pc表示<br>
 
 ④コメントを読む、書き込む<br>
 ※スマートフォン表示<br>
+![画像名](news/4.PNG)
 
 
 ※pc表示<br>
