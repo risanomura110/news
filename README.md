@@ -62,26 +62,25 @@ SNSフォロワーが増え著者のファンが増える。<br>
 ## 解決策<br>
 ①本のQRコードを読み込むとサイトが閲覧でき、コメントを書き込むことができる。<br>
 ②著者の名前をクリックすると経歴とSNSのリンクが貼り付けてある。<br>
-DEMO　読者・アプリケーション利用までの流れ<br>
+
+# DEMO　読者・アプリケーション利用までの流れ<br>
 ①読者・他者の意見が気になる<br>
-![画像名](https://github.com/risanomura110/news/app/assets/images/1.png)
+![画像名](https://github.com/risanomura110/news/blob/master/1.jpeg)
 
 ②本に記載されたQRコードを読み込む<br>
 
-![画像名](https://github.com/risanomura110/news/app/assets/images/2.png)
+![画像名](https://github.com/risanomura110/news/blob/master/2.png)
 
 ③気になる記事ページサイトを見る<br>
 ※スマートフォン表示<br>
-![画像名](news/3.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/3.png)
 
-※pc表示<br>
 
 ④コメントを読む、書き込む<br>
 ※スマートフォン表示<br>
-![画像名](news/4.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/4.png)
 
 
-※pc表示<br>
 
 
 
@@ -145,3 +144,7 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript<br>
 | text        | text    | null: false |
 | twitter     | string  | null: false |
 | blog        | string  | null: false |
+
+### Association
+
+- has_one_attached :image
