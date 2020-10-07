@@ -74,14 +74,12 @@ DEMO　読者・アプリケーション利用までの流れ<br>
 ※スマートフォン表示<br>
 ![画像名](https://github.com/risanomura110/news/blob/master/3.png)
 
-※pc表示<br>
 
 ④コメントを読む、書き込む<br>
 ※スマートフォン表示<br>
 ![画像名](https://github.com/risanomura110/news/blob/master/4.png)
 
 
-※pc表示<br>
 
 
 
