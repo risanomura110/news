@@ -64,11 +64,11 @@ SNSフォロワーが増え著者のファンが増える。<br>
 ②著者の名前をクリックすると経歴とSNSのリンクが貼り付けてある。<br>
 DEMO　読者・アプリケーション利用までの流れ<br>
 ①読者・他者の意見が気になる<br>
-![画像名](news/readme.JPG)
+![画像名](https://github.com/risanomura110/news/app/assets/images/1.png)
 
 ②本に記載されたQRコードを読み込む<br>
 
-![画像名](news/名称未設定のアートワーク 9.png)
+![画像名](https://github.com/risanomura110/news/app/assets/images/2.png)
 
 
 
