@@ -72,13 +72,13 @@ DEMO　読者・アプリケーション利用までの流れ<br>
 
 ③気になる記事ページサイトを見る<br>
 ※スマートフォン表示<br>
-![画像名](news/3.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/3.PNG)
 
 ※pc表示<br>
 
 ④コメントを読む、書き込む<br>
 ※スマートフォン表示<br>
-![画像名](news/4.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/4.PNG)
 
 
 ※pc表示<br>
