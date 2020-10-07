@@ -143,3 +143,7 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript<br>
 | text        | text    | null: false |
 | twitter     | string  | null: false |
 | blog        | string  | null: false |
+
+### Association
+
+- has_one_attached :image
