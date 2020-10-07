@@ -64,21 +64,21 @@ SNSフォロワーが増え著者のファンが増える。<br>
 ②著者の名前をクリックすると経歴とSNSのリンクが貼り付けてある。<br>
 DEMO　読者・アプリケーション利用までの流れ<br>
 ①読者・他者の意見が気になる<br>
-![画像名](https://github.com/risanomura110/news/app/assets/images/1.png)
+![画像名](https://github.com/risanomura110/news/blob/master/1.jpeg)
 
 ②本に記載されたQRコードを読み込む<br>
 
-![画像名](https://github.com/risanomura110/news/app/assets/images/2.png)
+![画像名](https://github.com/risanomura110/news/blob/master/2.png)
 
 ③気になる記事ページサイトを見る<br>
 ※スマートフォン表示<br>
-![画像名](https://github.com/risanomura110/news/blob/master/3.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/3.png)
 
 ※pc表示<br>
 
 ④コメントを読む、書き込む<br>
 ※スマートフォン表示<br>
-![画像名](https://github.com/risanomura110/news/blob/master/4.PNG)
+![画像名](https://github.com/risanomura110/news/blob/master/4.png)
 
 
 ※pc表示<br>
