@@ -94,8 +94,13 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript<br>
 合計：70時間程度<br>
 
 # 課題や今後実装したい機能<br>
+
 ## アプリケーションの課題<br>
-・難しい用語の説明がない。<br>
+
+以下のシートをご覧ください。アプリケーションのペルソナが持つ課題を洗い出し、そして解決策となる追加実装の仕様を洗い出しました。<br>
+
+https://docs.google.com/spreadsheets/d/1ZtW3srkPp1sekqItQXLf4KZRQPhFlkrCdPMScNsjVwU/edit#gid=282075926<br>
+
 ## 今後実装したい機能<br>
 ・レスポンシブWEBデザインに変更する。<br>
 ・難解な用語をクリックすると注釈が出る。<br>
