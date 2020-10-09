@@ -102,9 +102,7 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/Javascript<br>
 https://docs.google.com/spreadsheets/d/1ZtW3srkPp1sekqItQXLf4KZRQPhFlkrCdPMScNsjVwU/edit#gid=282075926<br>
 
 ## 今後実装したい機能<br>
-・レスポンシブWEBデザインに変更する。<br>
 ・難解な用語をクリックすると注釈が出る。<br>
-・アイコンを設定する。<br>
 ・PV数のランキングが下に表示される（歴代・24時間以内）<br>
 
 
