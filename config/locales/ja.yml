@@ -7,3 +7,11 @@ ja:
        title: タイトル
        genre: ジャンル
        image: 画像
+     write:
+        image: 画像
+        name: 著者名
+        twitter: ツイッターurl
+        blog: ブログurl
+        text: 経歴
+
+
