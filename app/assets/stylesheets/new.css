@@ -1,8 +1,12 @@
 .new{
   height:200px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   flex-direction: column;
   border: 1px solid #fff;
   padding: 20px;
+}
+.new_text{
+ height: 150px;
+ resize: none;
 }

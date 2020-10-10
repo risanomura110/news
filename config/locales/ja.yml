@@ -1,0 +1,17 @@
+ja:
+ activerecord:
+   attributes:
+     item:
+       text: 本文
+       name: 著者名
+       title: タイトル
+       genre: ジャンル
+       image: 画像
+     write:
+        image: 画像
+        name: 著者名
+        twitter: ツイッターurl
+        blog: ブログurl
+        text: 経歴
+
+
