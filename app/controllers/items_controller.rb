@@ -2,7 +2,8 @@ class ItemsController < ApplicationController
   def index
     @items = Item.order('created_at DESC')
   end
-#ジャンル政治
+
+  # ジャンル政治
   def political
     @items = Item.where(genre_id: 2).order('created_at DESC')
   end
@@ -43,8 +44,8 @@ class ItemsController < ApplicationController
 
   def show
     @items = Item.find(params[:id])
-    a= @items.genre_id#ユーザーが選択した記事のジャンル数字
-    @items = Item.where(genre_id:a).order('created_at DESC')
+    a = @items.genre_id # ユーザーが選択した記事のジャンル数字
+    @items = Item.where(genre_id: a).order('created_at DESC')
 
     @item = Item.find(params[:id])
     @comment = Comment.new
