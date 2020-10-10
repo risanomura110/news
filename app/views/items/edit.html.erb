@@ -1,5 +1,10 @@
+ 
+  <div class="wrapper">
+
  <div class="new">
     <%= form_with model: @item, local: true do |f| %>
+    <%= render 'layouts/error_messages', model: f.object %>
+
     <div>
     記事内容を変更する
     </div>
@@ -26,7 +31,8 @@
     </div>
     <div>
      <%= link_to '戻る', items_path%>
-
     </div>
     <% end %>
 </div>
+
+</div><%# <wrapper終わり> %>
